@@ -6,6 +6,16 @@ class Grandpa {
     this.tel = tel;
     this.nascimento = nascimento;
   }
+
+  toResponse() {
+    return {
+      id: this.id,
+      nome: this.nome,
+      cpf: this.cpf,
+      tel: this.tel,
+      nascimento: this.nascimento
+    };
+  }
 }
 
 module.exports = Grandpa;
